@@ -2,6 +2,8 @@
 
 > notes taken during the course
 
+https://github.com/arielweinberger/nestjs-course-task-management/tree/s1-task-management-app
+
 ## CLASS-7
 
 ```
@@ -56,5 +58,10 @@ yarn add uuid
 
 ## CLASS-28
 
-## CLASS-29
+## CLASS-31
 
+https://github.com/typestack/class-validator
+
+```
+yarn add class-validator class-transformer
+```
