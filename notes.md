@@ -9,3 +9,5 @@ yarn global add @nestjs/cli
 nest -v
 
 nest new .
+## CLASS-8
+
