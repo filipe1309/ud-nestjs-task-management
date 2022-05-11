@@ -19,5 +19,14 @@ yarn start:dev
 ```
 ## CLASS-9
 
-## CLASS-11
+```
+nest g --help
+nest g module tasks
+```
 
+## CLASS-11
+## CLASS-12
+
+```
+nest g controller tasks --no-spec
+```
