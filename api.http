@@ -1,3 +1,11 @@
 ### Get All Tasks
 
 GET http://localhost:3000/tasks
+
+### Create a Task
+
+POST http://localhost:3000/tasks
+Content-Type: application/x-www-form-urlencoded
+
+title=Clean My Room
+&description=Lots o cleaning has to be done
