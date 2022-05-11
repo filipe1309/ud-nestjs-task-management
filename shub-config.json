@@ -1,0 +1,14 @@
+{
+    "version": "",
+    "username": "Filipe Leuch Bonfim",
+    "github_username": "filipe1309",
+    "project_name": "NestJS Task Management",
+    "project_repo_name": "ud-nestjs-task-management",
+    "project_repo_link": "https://github.com/filipe1309/ud-nestjs-task-management.git",
+    "course_source": "Udemy",
+    "course_name": "NestJS Zero to Hero - Modern TypeScript Back-end Development",
+    "course_link": "https://www.udemy.com/course/nestjs-zero-to-hero",
+    "course_type": "class",
+    "course_multiple": "false",
+    "vcs": "false"
+}
