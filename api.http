@@ -2,6 +2,11 @@
 
 GET http://localhost:3000/tasks
 
+### Get Tasks With Filters
+
+GET http://localhost:3000/tasks?status=OPEN&search=room
+
+
 ### Create a Task
 
 POST http://localhost:3000/tasks
