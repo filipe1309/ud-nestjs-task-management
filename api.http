@@ -9,3 +9,7 @@ Content-Type: application/x-www-form-urlencoded
 
 title=Clean My Room
 &description=Lots o cleaning has to be done
+
+### Get Task By Id
+
+GET http://localhost:3000/tasks/e439a4f9-d5d8-4f2a-b648-27c2b29b93c4
