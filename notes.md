@@ -50,3 +50,5 @@ yarn add uuid
 
 ## CLASS-23
 
+## CLASS-24
+
