@@ -71,3 +71,5 @@ yarn add class-validator class-transformer
 
 ## CLASS-34
 
+## CLASS-35
+
