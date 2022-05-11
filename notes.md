@@ -41,3 +41,6 @@ nest g service tasks --no-spec
 
 ## CLASS-19
 
+```
+yarn add uuid
+```
