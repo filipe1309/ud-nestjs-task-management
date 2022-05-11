@@ -30,5 +30,8 @@ nest g module tasks
 ```
 nest g controller tasks --no-spec
 ```
-## CLASS-13
+## CLASS-14
 
+```
+nest g service tasks --no-spec
+```
