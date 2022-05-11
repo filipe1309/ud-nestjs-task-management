@@ -26,7 +26,7 @@ DELETE http://localhost:3000/tasks/72877b33-d76e-4564-a92d-9204cf70dfd3
 
 ### Update Task Status By Id
 
-PATCH http://localhost:3000/tasks/96c4067f-2c8e-43f3-bc37-56ebc92bd812/status
+PATCH http://localhost:3000/tasks/776c37e8-cd89-4c70-9fbb-c74a5c27da2a/status
 Content-Type: application/json
 
 {
