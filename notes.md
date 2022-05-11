@@ -65,3 +65,5 @@ https://github.com/typestack/class-validator
 ```
 yarn add class-validator class-transformer
 ```
+## CLASS-32
+
