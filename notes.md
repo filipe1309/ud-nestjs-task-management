@@ -100,3 +100,11 @@ Password: postgres
 Save password
 ## CLASS-39
 
+PGAdmin > Server > NestJS Course > Databases > Create
+Database: task-management
+
+## CLASS-43
+
+```
+yarn add typeorm @nestjs/typeorm pg
+```
