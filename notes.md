@@ -110,3 +110,5 @@ yarn add typeorm @nestjs/typeorm pg
 ```
 ## CLASS-44
 
+## CLASS-45
+
