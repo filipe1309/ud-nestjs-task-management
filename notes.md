@@ -76,3 +76,5 @@ yarn add class-validator class-transformer
 https://github.com/arielweinberger/nestjs-course-task-management/tree/s2-validation-and-error-handling
 
 
+## CLASS-36
+
