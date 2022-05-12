@@ -76,5 +76,25 @@ yarn add class-validator class-transformer
 https://github.com/arielweinberger/nestjs-course-task-management/tree/s2-validation-and-error-handling
 
 
-## CLASS-36
+## CLASS-39
 
+```
+docker run --name postgres-nest -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
+
+docker container start postgres-nest
+docker container stop postgres-nest
+
+docker container rm postgres-nest
+```
+
+PGAdmin
+Server > Create
+
+General
+Name: NestJS Course
+
+Connection
+Host name/address: postgres
+Username: postgres
+Password: postgres
+Save password
