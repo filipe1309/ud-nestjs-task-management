@@ -112,3 +112,6 @@ yarn add typeorm @nestjs/typeorm pg
 
 ## CLASS-45
 
+```
+yarn remove uuid
+```
