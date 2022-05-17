@@ -14,23 +14,44 @@ export class TasksService {
     @InjectRepository(Task)
     private tasksRepository: Repository<Task>,
   ) {
-    this.tasksRepositoryExtended = this.tasksRepository.extend({
-      async createTask(createTaskDto: CreateTaskDto): Promise<Task> {
-        const { title, description } = createTaskDto;
-        const task = this.create({
-          title,
-          description,
-          status: TaskStatus.OPEN,
-        });
-        await this.save(task);
-        return task;
-      },
-    });
+    this.tasksRepositoryExtended = this.tasksRepository
+      .extend({
+        async createTask(createTaskDto: CreateTaskDto): Promise<Task> {
+          const { title, description } = createTaskDto;
+          const task = this.create({
+            title,
+            description,
+            status: TaskStatus.OPEN,
+          });
+          await this.save(task);
+          return task;
+        },
+      })
+      .extend({
+        async getTasks(filterDto: GetTasksFilterDto): Promise<Task[]> {
+          const { status, search } = filterDto;
+          const query = this.createQueryBuilder('task');
+
+          if (status) {
+            query.andWhere('task.status = :status', { status });
+          }
+
+          if (search) {
+            query.andWhere(
+              'LOWER(task.title) LIKE LOWER(:search) OR LOWER(task.description) LIKE LOWER(:search)',
+              { search: `%${search}%` },
+            );
+          }
+
+          const tasks = await query.getMany();
+          return tasks;
+        },
+      });
   }
 
-  // getAllTasks(): Task[] {
-  //   return this.tasks;
-  // }
+  getTasks(filterDto: GetTasksFilterDto): Promise<Task[]> {
+    return this.tasksRepositoryExtended.getTasks(filterDto);
+  }
 
   async getTaskById(id: string): Promise<Task> {
     const found = await this.tasksRepository.findOneBy({ id });
@@ -40,27 +61,6 @@ export class TasksService {
 
     return found;
   }
-
-  // getTasksWithFilters(filterDto: GetTasksFilterDto): Task[] {
-  //   const { status, search } = filterDto;
-
-  //   let tasks = this.getAllTasks();
-
-  //   if (status) {
-  //     tasks = tasks.filter((task) => task.status === status);
-  //   }
-
-  //   if (search) {
-  //     tasks = tasks.filter((task) => {
-  //       return (
-  //         task.title.toLowerCase().includes(search) ||
-  //         task.description.toLowerCase().includes(search)
-  //       );
-  //     });
-  //   }
-
-  //   return tasks;
-  // }
 
   createTask(createTaskDto: CreateTaskDto): Promise<Task> {
     return this.tasksRepositoryExtended.createTask(createTaskDto);
