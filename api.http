@@ -12,12 +12,12 @@ GET http://localhost:3000/tasks?status=OPEN&search=room
 POST http://localhost:3000/tasks
 Content-Type: application/x-www-form-urlencoded
 
-title=Clean My Room
+title=Clean My Room 2
 &description=Lots o cleaning has to be done
 
 ### Get Task By Id
 
-GET http://localhost:3000/tasks/e439a4f9-d5d8-4f2a-b648-27c2b29b93c4
+GET http://localhost:3000/tasks/03eed331-6bb9-4e75-9716-0327006576e6
 
 ### Delete Task By Id
 

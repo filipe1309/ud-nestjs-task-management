@@ -8,10 +8,25 @@ import { Repository } from 'typeorm';
 
 @Injectable()
 export class TasksService {
+  tasksRepositoryExtended: any;
+
   constructor(
     @InjectRepository(Task)
     private tasksRepository: Repository<Task>,
-  ) {}
+  ) {
+    this.tasksRepositoryExtended = this.tasksRepository.extend({
+      async createTask(createTaskDto: CreateTaskDto): Promise<Task> {
+        const { title, description } = createTaskDto;
+        const task = this.create({
+          title,
+          description,
+          status: TaskStatus.OPEN,
+        });
+        await this.save(task);
+        return task;
+      },
+    });
+  }
 
   // getAllTasks(): Task[] {
   //   return this.tasks;
@@ -47,19 +62,9 @@ export class TasksService {
   //   return tasks;
   // }
 
-  // createTask(createTaskDto: CreateTaskDto): Task {
-  //   const { title, description } = createTaskDto;
-
-  //   const task: Task = {
-  //     id: uuid(),
-  //     title,
-  //     description,
-  //     status: TaskStatus.OPEN,
-  //   };
-
-  //   this.tasks.push(task);
-  //   return task;
-  // }
+  createTask(createTaskDto: CreateTaskDto): Promise<Task> {
+    return this.tasksRepositoryExtended.createTask(createTaskDto);
+  }
 
   // deleteTask(id: string): void {
   //   const found = this.getTaskById(id);
