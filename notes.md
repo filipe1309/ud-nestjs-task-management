@@ -125,5 +125,10 @@ yarn remove uuid
 
 ## CLASS-53
 
-## CLASS-55
+## CLASS-57
 
+```
+docker-compose run --rm nest_yarn nest g module auth
+docker-compose run --rm nest_yarn nest g service auth --no-spec
+docker-compose run --rm nest_yarn nest g controller auth --no-spec
+```
