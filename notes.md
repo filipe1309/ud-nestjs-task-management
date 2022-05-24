@@ -134,3 +134,5 @@ docker-compose run --rm nest_yarn nest g controller auth --no-spec
 ```
 ## CLASS-58
 
+## CLASS-59
+
