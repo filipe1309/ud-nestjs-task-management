@@ -1,6 +1,13 @@
 version: '3'
 
 services:
+  nest_yarn:
+    build:
+      context: ./
+      dockerfile: ./docker/Dockerfile
+    volumes:
+      - .:/home/node/app
+
   app:
     build:
       context: ./
@@ -12,7 +19,7 @@ services:
       - .:/home/node/app
 
   postgres:
-    image: postgres
+    image: postgres:14.3
     ports:
       - 5432:5432
     environment:
