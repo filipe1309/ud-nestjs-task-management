@@ -181,3 +181,5 @@ docker-compose run --rm nest_yarn yarn add @nestjs/jwt @nestjs/passport passport
 JWT = base64  
 Signature = verify if the data is changed!
 https://jwt.io/  
+## CLASS-67
+
