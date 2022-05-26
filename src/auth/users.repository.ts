@@ -39,4 +39,8 @@ export class UsersRepository {
       }
     }
   }
+
+  async findOne(options): Promise<User> {
+    return await this.userEntityRepository.findOne(options);
+  }
 }
