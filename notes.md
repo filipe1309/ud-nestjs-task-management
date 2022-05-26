@@ -157,3 +157,13 @@ The ?: at the start of the first group tells the regexp engine not to capture th
 
 ## CLASS-61
 
+- sha256  
+- Risk: Rainbow table  
+- Salt to avoid Rainbow table: salt_userpass
+
+## CLASS-62
+
+```
+docker-compose run --rm nest_yarn yarn add bcrypt
+docker-compose run --rm nest_yarn yarn add @types/bcrypt -D
+```
