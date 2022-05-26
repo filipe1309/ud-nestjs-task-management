@@ -176,3 +176,5 @@ docker-compose run --rm nest_yarn yarn add @types/bcrypt -D
 ```
 docker-compose run --rm nest_yarn yarn add @nestjs/jwt @nestjs/passport passport passport-jwt
 ```
+## CLASS-66
+
