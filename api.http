@@ -48,3 +48,8 @@ Content-Type: application/x-www-form-urlencoded
 
 username=john.doe
 &password=SUperScretP4sww0!
+
+
+### Auth Guard Test
+# POST http://localhost:3000/auth/test
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4uZG9lIiwiaWF0IjoxNjUzNjE0MzA4LCJleHAiOjE2NTM2MTc5MDh9.jRCM7k18CSEnwaHNtDhtJh7kGSj8f2Zj93wpgGOIo-Q

@@ -183,3 +183,6 @@ Signature = verify if the data is changed!
 https://jwt.io/  
 ## CLASS-67
 
+```
+docker-compose run --rm nest_yarn yarn add @types/passport-jwt -D
+```

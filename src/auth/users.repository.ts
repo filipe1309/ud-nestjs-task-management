@@ -4,7 +4,7 @@ import {
   InternalServerErrorException,
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Repository } from 'typeorm';
+import { FindOneOptions, Repository } from 'typeorm';
 import { AuthCredentialsDto } from './dto/auth-credentials.dto';
 import { User } from './user.entity';
 import * as bcrypt from 'bcrypt';
@@ -40,7 +40,7 @@ export class UsersRepository {
     }
   }
 
-  async findOne(options): Promise<User> {
+  async findOne(options: FindOneOptions<User>): Promise<User> {
     return await this.userEntityRepository.findOne(options);
   }
 }
