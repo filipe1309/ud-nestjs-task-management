@@ -10,8 +10,8 @@ import { User } from 'src/auth/user.entity';
 export class TasksService {
   constructor(private taskEntityRepository: TaskRepository) {}
 
-  getTasks(filterDto: GetTasksFilterDto): Promise<Task[]> {
-    return this.taskEntityRepository.findAll(filterDto);
+  getTasks(filterDto: GetTasksFilterDto, user: User): Promise<Task[]> {
+    return this.taskEntityRepository.findAll(filterDto, user);
   }
 
   async getTaskById(id: string): Promise<Task> {
