@@ -20,7 +20,9 @@ title=Clean My Room from 2
 
 ### Get Task By Id
 
-GET http://localhost:3000/tasks/03eed331-6bb9-4e75-9716-0327006576e6
+GET http://localhost:3000/tasks/05d28c30-7c96-4943-a399-436064a94ab5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4uZG9lIiwiaWF0IjoxNjUzOTU5NDE3LCJleHAiOjE2NTM5NjMwMTd9.NT1Ge-jeBnDwxscpNLS91WIdhKeboAikJ7Y1kwpEvQk
+
 
 ### Delete Task By Id
 

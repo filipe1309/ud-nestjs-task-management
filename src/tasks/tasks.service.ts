@@ -14,8 +14,8 @@ export class TasksService {
     return this.taskEntityRepository.findAll(filterDto, user);
   }
 
-  async getTaskById(id: string): Promise<Task> {
-    return this.taskEntityRepository.findById(id);
+  async getTaskById(id: string, user: User): Promise<Task> {
+    return this.taskEntityRepository.findById(id, user);
   }
 
   createTask(createTaskDto: CreateTaskDto, user: User): Promise<Task> {
@@ -26,7 +26,7 @@ export class TasksService {
     return this.taskEntityRepository.deleteById(id);
   }
 
-  async updateTaskStatus(id: string, status: TaskStatus): Promise<Task> {
-    return this.taskEntityRepository.updateTaskStatus(id, status);
-  }
+  // async updateTaskStatus(id: string, status: TaskStatus): Promise<Task> {
+  //   return this.taskEntityRepository.updateTaskStatus(id, status);
+  // }
 }
