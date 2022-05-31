@@ -196,3 +196,5 @@ docker-compose run --rm nest_yarn yarn add @types/passport-jwt -D
 
 ## CLASS-72
 
+## CLASS-73
+
