@@ -61,10 +61,14 @@ export class TaskRepository {
     }
   }
 
-  // async updateTaskStatus(id: string, status: TaskStatus): Promise<Task> {
-  //   const task = await this.findById(id);
-  //   task.status = status;
-  //   await this.taskEntityRepository.save(task);
-  //   return task;
-  // }
+  async updateTaskStatus(
+    id: string,
+    status: TaskStatus,
+    user: User,
+  ): Promise<Task> {
+    const task = await this.findById(id, user);
+    task.status = status;
+    await this.taskEntityRepository.save(task);
+    return task;
+  }
 }
