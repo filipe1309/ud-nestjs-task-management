@@ -12,9 +12,10 @@ GET http://localhost:3000/tasks?status=OPEN&search=room
 ### Create a Task
 
 POST http://localhost:3000/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4uZG9lIiwiaWF0IjoxNjUzOTU5NDE3LCJleHAiOjE2NTM5NjMwMTd9.NT1Ge-jeBnDwxscpNLS91WIdhKeboAikJ7Y1kwpEvQk
 Content-Type: application/x-www-form-urlencoded
 
-title=Clean My Room 3
+title=Clean My Room
 &description=Lots o cleaning has to be done
 
 ### Get Task By Id
