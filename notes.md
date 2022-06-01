@@ -238,3 +238,5 @@ docker-compose run --rm nest_yarn yarn add @types/hapi__joi -D
 https://passwordsgenerator.net/
 ## CLASS-91
 
+https://github.com/arielweinberger/task-management-frontend  
+
