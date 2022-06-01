@@ -1,21 +1,22 @@
 ### Get All Tasks
 
 GET http://localhost:3000/tasks
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4uZG9lIiwiaWF0IjoxNjUzOTU5NDE3LCJleHAiOjE2NTM5NjMwMTd9.NT1Ge-jeBnDwxscpNLS91WIdhKeboAikJ7Y1kwpEvQk
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4uZG9lMiIsImlhdCI6MTY1NDA0MTEyMCwiZXhwIjoxNjU0MDQ0NzIwfQ.6WaSspv7SfMt632FPL2n8HWYogQWDT14mKvC1WspmLI
 
 
 ### Get Tasks With Filters
 
 GET http://localhost:3000/tasks?status=OPEN&search=room
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4uZG9lMiIsImlhdCI6MTY1NDA0MTEyMCwiZXhwIjoxNjU0MDQ0NzIwfQ.6WaSspv7SfMt632FPL2n8HWYogQWDT14mKvC1WspmLI
 
 
 ### Create a Task
 
 POST http://localhost:3000/tasks
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4uZG9lMiIsImlhdCI6MTY1Mzk2MDQ5NCwiZXhwIjoxNjUzOTY0MDk0fQ.EFrdCOHj2ijbWsvtiCC2ZpYaQqIAKlkz8lGeekyDL9Q
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4uZG9lMiIsImlhdCI6MTY1NDA0MTEyMCwiZXhwIjoxNjU0MDQ0NzIwfQ.6WaSspv7SfMt632FPL2n8HWYogQWDT14mKvC1WspmLI
 Content-Type: application/x-www-form-urlencoded
 
-title=Clean My Room from 2
+title=Clean My Room from X
 &description=Lots o cleaning has to be done 2
 
 ### Get Task By Id
