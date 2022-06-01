@@ -240,3 +240,5 @@ https://passwordsgenerator.net/
 
 https://github.com/arielweinberger/task-management-frontend  
 
+## CLASS-92
+
