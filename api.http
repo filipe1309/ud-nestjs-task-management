@@ -1,7 +1,7 @@
 ### Get All Tasks
 
 GET http://localhost:3000/tasks
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4uZG9lMiIsImlhdCI6MTY1NDA0MTEyMCwiZXhwIjoxNjU0MDQ0NzIwfQ.6WaSspv7SfMt632FPL2n8HWYogQWDT14mKvC1WspmLI
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG4uZG9lMiIsImlhdCI6MTY1NDA0NzE5NywiZXhwIjoxNjU0MDUwNzk3fQ.pRHcTBa6eLgT5Wejh-EK-8beDWt93KxR4oVHBRDZKLc
 
 
 ### Get Tasks With Filters
