@@ -226,3 +226,5 @@ docker-compose run --rm nest_yarn yarn add @nestjs/config
 
 ## CLASS-88
 
+## CLASS-89
+
