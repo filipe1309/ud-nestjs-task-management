@@ -212,3 +212,15 @@ docker-compose run --rm nest_yarn yarn add @types/passport-jwt -D
 
 ## CLASS-83
 
+Envs with windows:
+
+```
+yarn global add cross-env
+```
+
+## CLASS-87
+
+```
+docker-compose run --rm nest_yarn yarn add @nestjs/config
+```
+
