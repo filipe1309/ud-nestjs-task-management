@@ -228,3 +228,8 @@ docker-compose run --rm nest_yarn yarn add @nestjs/config
 
 ## CLASS-89
 
+Schema validation
+```
+docker-compose run --rm nest_yarn yarn add @hapi/joi
+docker-compose run --rm nest_yarn yarn add @types/hapi__joi -D
+```
