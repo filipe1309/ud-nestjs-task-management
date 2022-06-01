@@ -233,3 +233,5 @@ Schema validation
 docker-compose run --rm nest_yarn yarn add @hapi/joi
 docker-compose run --rm nest_yarn yarn add @types/hapi__joi -D
 ```
+## CLASS-90
+
