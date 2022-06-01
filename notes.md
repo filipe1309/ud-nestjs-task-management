@@ -236,3 +236,5 @@ docker-compose run --rm nest_yarn yarn add @types/hapi__joi -D
 ## CLASS-90
 
 https://passwordsgenerator.net/
+## CLASS-91
+
