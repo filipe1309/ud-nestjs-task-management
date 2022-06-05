@@ -256,3 +256,23 @@ heroku addons:create heroku-postgresql:hbby-dev -a HEROKU_APP_NAME
 
 ## CLASS-100
 
+```
+heroku git:remote -a HEROKU_APP_NAME
+heroku config:set NPM_CONFIG_PRODUCTION=false
+heroku config:set NODE_ENV=production
+heroku config:set STAGE=prod
+heroku config:set DB_HOST=...
+heroku config:set DB_PORT=...
+heroku config:set DB_USERNAME=...
+heroku config:set DB_PASSWORD=...
+heroku config:set DB_DATABASE=...
+heroku config:set JWT_SECRET=...
+
+git add .
+git commit -m "Going Live"
+git push -f heroku HEAD:master
+
+heroku logs --tail
+```
+## CLASS-101
+
