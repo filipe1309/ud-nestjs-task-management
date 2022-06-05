@@ -240,5 +240,17 @@ https://passwordsgenerator.net/
 
 https://github.com/arielweinberger/task-management-frontend  
 
-## CLASS-92
+## CLASS-97
+
+```
+docker-compose run --rm nest_yarn yarn global add heroku
+heroku -v
+heroku login
+```
+
+## CLASS-98
+
+```
+heroku addons:create heroku-postgresql:hbby-dev -a HEROKU_APP_NAME
+```
 
