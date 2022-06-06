@@ -276,3 +276,6 @@ heroku logs --tail
 ```
 ## CLASS-101
 
+```
+yarn test --watch
+```
