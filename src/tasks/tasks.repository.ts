@@ -13,8 +13,8 @@ import { TaskStatus } from './task-status.enum';
 import { Task } from './task.entity';
 
 @Injectable()
-export class TaskRepository {
-  private logger = new Logger('TaskRepository', {
+export class TasksRepository {
+  private logger = new Logger('TasksRepository', {
     timestamp: true,
   });
 
